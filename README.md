@@ -6,8 +6,7 @@ Aqui está o source code, imagens e link da apresentação do minicurso de LaTeX
 
 ## Veja a apresentação:
 - [Slides](https://bit.ly/latex-cvbioinfo)
-- QR Code:
-  [![qrcode](img/bit.ly_latex-cvbioinfo.png)
+- QR Code dos Slides: [![qrcode](img/bit.ly_latex-cvbioinfo.png)
 
 ## Licença de uso
 
