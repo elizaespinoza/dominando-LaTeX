@@ -1,12 +1,11 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1e097b46-6910-44aa-ac4b-8959eef0d4e3/deploy-status)](https://app.netlify.com/sites/seminarios-fluxprt/deploys) [![CC BY 4.0][cc-by-shield]][cc-by]
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5e55f16c-500d-4214-a934-78de9a43911f/deploy-status)](https://app.netlify.com/sites/dominandolatex/deploys) [![CC BY 4.0][cc-by-shield]][cc-by]
 
 # Dominando LaTeX
 
 Aqui está o source code, imagens e link da apresentação do minicurso de LaTeX ministrado durante o VI Curso de Verão Em Bioinformática 2022 na Universidade Federal de Minas Gerais.
 
 ## Veja a apresentação:
-- [Video](https://youtu.be/PZ9E3pJQ2Nw)
-- [Slides](https://seminarios-fluxprt.netlify.app/)
+- [Slides](https://dominandolatex.netlify.app/)
 
 ## Licença de uso
 
