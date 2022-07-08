@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Dominando LaTeX</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Elizabeth Alfaro-Espinoza" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <script src="libs/xaringanExtra-progressBar/progress-bar.js"></script>
+    <link href="libs/xaringanExtra-extra-styles/xaringanExtra-extra-styles.css" rel="stylesheet" />
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"eb801aa257754627b2f641eb20b02b31","expires":1}</script>
+    <script src="libs/himalaya/himalaya.js"></script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <link href="libs/editable/editable.css" rel="stylesheet" />
+    <script src="libs/editable/editable.js"></script>
+    <script src="libs/mark.js/mark.min.js"></script>
+    <link href="libs/xaringanExtra-search/search.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-search/search.js"></script>
+    <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"bottom-left","caseSensitive":false,"showIcon":true,"autoSearch":true}) })</script>
+    <link rel="stylesheet" href="css/default.css" type="text/css" />
+    <link rel="stylesheet" href="css/mmp.css" type="text/css" />
+    <link rel="stylesheet" href="css/mmp-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Dominando LaTeX
+## Escrita Científica com Overleaf
+### Elizabeth Alfaro-Espinoza
+### VI Curso de Verão em Bioinformática 2022
+### 08-07-2022
+
+---
+
+layout: true
+  
+&lt;div class="my-footer"&gt;&lt;span&gt;
+Dominando LaTeX - &lt;a href="https://github.com/ElizaAlfaro"&gt;Elizabeth Alfaro-Espinoza&lt;/a&gt;
+&lt;/span&gt;&lt;/div&gt;
+
+
+---
+class: middle
+
+
+
+
+<style>.xe__progress-bar__container {
+  top:0;
+  opacity: 1;
+  position:absolute;
+  right:0;
+  left: 0;
+}
+.xe__progress-bar {
+  height: 10px;
+  background-color: #0051BA;
+  width: calc(var(--slide-current) / var(--slide-total) * 100%);
+}
+.remark-visible .xe__progress-bar {
+  animation: xe__progress-bar__wipe 200ms forwards;
+  animation-timing-function: cubic-bezier(.86,0,.07,1);
+}
+@keyframes xe__progress-bar__wipe {
+  0% { width: calc(var(--slide-previous) / var(--slide-total) * 100%); }
+  100% { width: calc(var(--slide-current) / var(--slide-total) * 100%); }
+}</style>
+
+
+# Elizabeth Alfaro-Espinoza
+- Doutoranda no [Programa de Pós-Graduação em Bioinformática](http://www.pgbioinfo.icb.ufmg.br/) -  ICB/UFMG.
+
+  - Bolsa CAPES - Processo nº 88887.517813/2020-00.
+  
+  - Membro do Laboratório de Universalização de Acesso - LUAR.
+  
+  
+&lt;img src="img/logoAll.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+- Anteriormente:
+
+  - Graduada em Microbiología e Parasitología.
+
+---
+class: middle
+
+&lt;center&gt;&lt;h1&gt; TeX &amp; LaTeX&lt;/h1&gt;&lt;/center&gt;
+
+.pull-left[
+## Donald Knuth
+
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Donald_Knuth_DSC00624.jpg/800px-Donald_Knuth_DSC00624.jpg" height="178px" style="display: block; margin: auto;" /&gt;
+
+- *"The Art of Computer Programming"* (1968, 3° Ed. 1977)
+
+|&lt;img src="https://upload.wikimedia.org/wikipedia/commons/d/de/My_TEX.png"&lt;/&gt;|&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/METAFONT_logo.svg/1200px-METAFONT_logo.svg.png" width="420"&lt;/&gt;|&lt;img src="https://assets.fontsinuse.com/static/samples/2/1904/880/1/570e211d/computer-modern.png" width="500"&lt;/&gt;|
+|:-:|:-:|:-:|
+
+]
+
+.pull-right[
+
+## Leslie Lamport
+
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Leslie_Lamport.jpg" height="178px" style="display: block; margin: auto;" /&gt;
+
+- Desenvolvedor inicial do LaTeX (1974)
+
+&lt;center&gt;
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/1920px-LaTeX_logo.svg.png" width="160"&lt;/&gt; &lt;img src="https://cdn-icons-png.flaticon.com/512/3721/3721907.png" width="60"&lt;/&gt;
+&lt;/center&gt;
+
+]
+---
+class: middle
+
+&lt;center&gt;&lt;h1&gt; TeX &amp; LaTeX&lt;/h1&gt;&lt;/center&gt;
+
+.pull-left[
+## TeX
+- Sistema de formatação de código aberto
+- Etimología: *"technē" ("tecnologia", "arte")*
+- Pronúncia: *"Tequi"*
+
+|&lt;h3&gt;$$T \tau$$|&lt;h3&gt;$$E \varepsilon$$|&lt;h3&gt;$$X \chi$$|
+|:-:|:-:|:-:|
+
+## LaTeX
+- Conjunto de macros dentro do TeX
+- *Lamport TeX* ---&gt; LaTeX
+- Pronúncia: *"Latequi", "Leitequi"*
+]
+
+.pull-right[
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/componentesTeX.PNG" alt="TeX e LaTeX2e trabalhando juntos. Fonte: Oetiker et al. (2002)" width="90%" /&gt;
+&lt;p class="caption"&gt;TeX e LaTeX2e trabalhando juntos. Fonte: Oetiker et al. (2002)&lt;/p&gt;
+&lt;/div&gt;
+
+]
+---
+class: middle
+ 
+# Motivação
+
+.pull-left[
+
+&lt;center&gt;&lt;img src="https://cdn-icons-png.flaticon.com/512/508/508970.png"  width="150"&lt;/&gt;&lt;/center&gt;
+
+📌 Projetos
+
+📌 TCC, Dissertação, Tese
+
+📌 Relatório de pesquisa
+
+📌 Apresentações
+
+📌 CV
+
+📌 **Artigos** 
+]
+
+.pull-right[
+
+&lt;center&gt;&lt;img src="https://cdn-icons.flaticon.com/png/512/2076/premium/2076970.png?token=exp=1657236586~hmac=554564943542eaaa0bf321e9fc7f8452"  width="150"&lt;/&gt;&lt;/center&gt;
+
+📌 Relatórios
+
+📌 Apresentações
+
+📌 CV
+
+📌 **Artigos**
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+*Fonte: &lt;a href="https://www.flaticon.com/free-icons/share" title="share icons"&gt;Freepik - Flaticon&lt;/a&gt;. Licença CC Atrib.*
+]
+
+---
+class: middle
+
+.pull-left[
+
+# Vantagens
+
+- 👉 Templates prontos
+
+- 👉 Gera equações formatadas
+
+- 👉 Aprender comandos intuitivos*
+
+- 👉 Organização automática: 
+  - Figuras &amp; Tabelas
+  - Referencias &amp; Notas de rodapé
+  
+- 👉 Muitos pacotes complementares
+
+- 👉 Não há incompatibilidade de versões
+
+- 👉 Documentos pequenos e rápidos
+
+- 👉 Pode comentar
+]
+
+.pull-right[
+
+# Disvantagens
+
+- Taxa de aprendizado:
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="http://www.johndcook.com/wordvslatex.gif" alt="LaTeX versus Word. Fonte: Marko Pinteric. Todos os direitos reservados." width="90%" /&gt;
+&lt;p class="caption"&gt;LaTeX versus Word. Fonte: Marko Pinteric. Todos os direitos reservados.&lt;/p&gt;
+&lt;/div&gt;
+
+]
+
+---
+class: middle
+
+# Estrutura
+
+```
+\documentclass{article}   % Classe do arquivo
+
+\usepackage[utf8]{inputenc}   % Pacotes utilizados
+
+\title{Meu primeiro documento en \LaTeX}
+\author{Elizabeth Espinoza}
+
+\begin{document}    % Iniciar o texto
+\maketitle
+
+
+
+\end{document}    % Acabou o texto
+```
+
+---
+class: middle
+
+# Distribuições TeX
+
+&lt;center&gt;&lt;h4&gt;--&gt; Coleções de pacotes e programas que permitem a compilação de arquivos .tex em documentos legíveis.&lt;/h4&gt;&lt;/center&gt;&lt;br&gt;
+
+
+|SO|&lt;img src="https://progsoft.net/images/miktex-icon-68b4ce788b6bdfc8779f4a86c603422c70715b3b.png" width="100"&lt;/&gt;|&lt;img src="https://tug.org/mactex/images/mactexlogoX5.png" width="100"&lt;/&gt;|&lt;img src="https://avatars.githubusercontent.com/u/20062137?s=280&amp;v=4" width="100"&lt;/&gt;|&lt;img src="https://yihui.org/images/logo-tinytex.png" width="100"&lt;/&gt;|
+|:--:|:--:|:--:|:--:|:--:|
+|&lt;img src="https://cdn-icons-png.flaticon.com/512/732/732076.png" width="40"&lt;/&gt;|✅||✅|✅|
+|&lt;img src="https://cdn-icons-png.flaticon.com/512/152/152755.png" width="40"&lt;/&gt;|||✅|✅|
+|&lt;img src="https://cdn-icons-png.flaticon.com/512/2/2235.png" width="40"&lt;/&gt;||✅|✅|✅|
+
+---
+class: middle
+
+# IDEs
+
+&lt;center&gt;&lt;h4&gt;--&gt; Softwares que auxiliam na edição e compilação dos arquivos .tex&lt;/h4&gt;&lt;/center&gt;&lt;br&gt;
+
+|&lt;img src="https://www.lightbook.org/wp-content/uploads/2021/11/TeXstudio-Free-Download-1.jpg" width="140"&lt;/&gt;|&lt;img src="https://www.xm1math.net/texmaker/assets/img/texmaker256x256.png" width="140"&lt;/&gt;|&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Kile.svg/1200px-Kile.svg.png" width="130"&lt;/&gt;|&lt;img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Lyx_logo.png" width="140"&lt;/&gt;|&lt;img src="https://tug.org/texworks/img/TeXworks256.png" width="140"&lt;/&gt;|&lt;img src="https://images.ctfassets.net/nrgyaltdicpt/6qSXAo1CYEeBn5RkKLOR64/19c74bfb9a32772e353ff25c6f0070f5/ologo_square_colour_light_bg.png" width="140"&lt;/&gt;|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|&lt;h3&gt;TeXstudio&lt;/h3&gt;|&lt;h3&gt;TeXmaker&lt;/h3&gt;|&lt;h3&gt;Kile&lt;/h3&gt;|&lt;h3&gt;LyX&lt;/h3&gt;|&lt;h3&gt;TextWorks&lt;/h3&gt;|&lt;h3&gt;Overleaf&lt;/h3&gt;|
+
+---
+class: middle
+
+
+.left-column[ 
+
+&lt;img src="https://images.ctfassets.net/nrgyaltdicpt/6gsvc5Ogjmu04I4Miu0uGg/cb1d4391717d2ab8d5e42ede6fb0eef1/overleaf_wide_colour_light_bg.png" width="100%" style="display: block; margin: auto 0 auto auto;" /&gt;
+
+### [www.overleaf.com/](https://www.overleaf.com/)
+
+- Arquivos salvos na nuvem
+
+- Colaborativo
+
+- Histórico dos arquivos
+
+- Nenhuma instalação
+
+- Diversos templates
+]
+
+.right-column[ 
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src="https://sharelatex-wiki-cdn-671420.c.cdn77.org/learn-scripts/images/f/f0/V2-resize-panels.gif" width="94%" style="display: block; margin: auto 0 auto auto;" /&gt;
+]
+
+
+---
+class: middle
+# Vamos aprender praticando!
+
+## Dinâmica A
+
+### - Fazer o cadastro
+### - Clicar no botão superior esquerdo "New Project" --&gt; "Blank Project"
+&lt;br&gt;
+## Dica:
+
+### - Compilar no Overleaf -- `Control+Enter`
+
+---
+class: middle
+
+# Qué vamos a ver?
+
+.pull-left[
+
+- **Classe de arquivos**
+
+- **Pacotes essenciais**
+
+  - babel
+  
+  - inputenc
+  
+  - graphicx
+  
+  - hyperref
+  
+  - amsmath
+  
+  - subcaption
+]
+
+.pull-right[
+
+- **Comandos básicos**
+
+  - title, author, date
+  
+  - Sumário (tableofcontents)
+  
+  - section, subsection, subsubsection
+  
+  - Estilo (bf, it)
+  
+  - Links (url)
+  
+  - Listas (itemize, enumerate)
+  
+  - Quebra de linha
+]
+
+---
+
+class: middle
+
+# Caso real
+
+- Queremos submeter [este artigo](https://docs.google.com/document/d/12-kL14TGEO1fP1czhQwS0pHttGUdJ3kG0YmsdFUL90A/edit?usp=sharing) para o BSB2022.
+
+|&lt;h4&gt;"The format to be used is “Lecture Notes in Computer Science” (LNCS). Authors should consult [Springer’s authors’ guidelines](https://www.springer.com/authors/manuscript+guidelines?SGWID=0-40162-6-795324-0) and use [their proceedings templates](https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines), either for LaTeX or for Word, for the preparation of their papers. The actual submission must be in PDF format (maximum 20 Mb). LaTex or Word versions (on which the PDF must be based) will be required later, for accepted papers, for inclusion in the LNBI proceedings. BSB encourages authors to include their ORCIDs in their papers."&lt;/h4&gt;|
+|:-:|
+
+- Temos nossa de conta em Overleaf, temos o artigo e o [template](https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WuA4JS5uZpi) em LaTeX.
+
+- Vamos lá!
+
+---
+
+class: middle
+
+# Qué vamos a ver?
+
+- Equações 
+
+  - O que acha do [codecogs](https://www.codecogs.com/eqnedit.php)?
+
+- Referências
+
+  - [Scholar](https://scholar.google.com)
+  
+  - [Crossref](https://computeel.org/computeel/blog/2019/01/17/Bibtex.html)
+  
+- Figuras
+
+- Tabelas 
+  
+  - O que acha do [Tables Generator](https://www.tablesgenerator.com/)?
+---
+class: middle
+
+# Onde procurar ajuda?
+
+.pull-left[
+## Sítios Q&amp;A
+
+- [StackOverflow](https://stackoverflow.com/)
+
+- [TeX - LaTeX Stack Exchange](https://www.latex-project.org/help/links/#question-and-answer-websites:~:text=TeX%20%2D%20LaTeX%20Stack%20Exchange)
+
+- [LaTeX Community](http://www.latex-community.org/)
+
+&lt;br&gt;
+## Tutoriais
+- [Um cursso interativo para iniciantes](https://www.learnlatex.org/pt/)
+
+- [Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
+]
+
+.pull-right[
+
+## Documentação
+- [Comprehensive TEX Archive Network (CTAN)](https://ctan.org/)
+
+- [TeXdoc Online](https://texdoc.org/)
+
+- [The LaTeX Project](https://www.latex-project.org/help/)
+
+]
+---
+
+class: middle
+
+# Muito obrigada!
+.pull-left[
+
+&lt;img src="https://media.nature.com/lw800/magazine-assets/d41586-021-01485-y/d41586-021-01485-y_19217544.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+
+.pull-right[
+**Referências**:
+- Santos, Reginaldo. [Introdução ao LaTeX](http://each.uspnet.usp.br/sarajane/wp-content/uploads/2016/10/manual-latex-3.pdf). UFMG, 2012
+
+- Oetiker et al. [Introdução ao LaTeX2e em 105 minutos](https://www.ime.usp.br/~reverbel/mac212-02/material/lshortBR.pdf). Lshort (2002).
+
+#####Feito com 💙 usando [Xaringan](https://github.com/yihui/xaringan) e [XaringanExtra](https://github.com/gadenbuie/xaringanExtra).
+]
+
+**Contato**:
+- Email: &lt;a href="mailto:elizaespinoza@ufmg.br"&gt;elizaespinoza@ufmg.br&lt;/a&gt;
+- Github: &lt;a href="https://github.com/ElizaAlfaro"&gt;@elizaAlfaro&lt;/a&gt;
+- Twitter: &lt;a href="http://twitter.com/elizabioinfo"&gt;@elizabioinfo&lt;/a&gt;
+
+xaringan::inf_mr()
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
