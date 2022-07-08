@@ -443,3 +443,10 @@ knitr::include_graphics("https://media.nature.com/lw800/magazine-assets/d41586-0
 - Twitter: <a href="http://twitter.com/elizabioinfo">@elizabioinfo</a>
 
 xaringan::inf_mr()
+
+---
+class: middle
+ 
+<center><img src="img/bit.ly_latex-cvbioinfo.png" width="670"</>
+
+
