@@ -1,8 +1,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1e097b46-6910-44aa-ac4b-8959eef0d4e3/deploy-status)](https://app.netlify.com/sites/seminarios-fluxprt/deploys) [![CC BY 4.0][cc-by-shield]][cc-by]
 
-# Apresentação - Seminários em Bioinformática
+# Dominando LaTeX
 
-Aqui está o source code, imagens e link da apresentação de resultados parciais do meu doutorado em Bioinformática na Universidade Federal de Minas Gerais.
+Aqui está o source code, imagens e link da apresentação do minicurso de LaTeX ministrado durante o VI Curso de Verão Em Bioinformática 2022 na Universidade Federal de Minas Gerais.
 
 ## Veja a apresentação:
 - [Video](https://youtu.be/PZ9E3pJQ2Nw)
