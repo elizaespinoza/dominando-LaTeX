@@ -5,7 +5,9 @@
 Aqui está o source code, imagens e link da apresentação do minicurso de LaTeX ministrado durante o VI Curso de Verão Em Bioinformática 2022 na Universidade Federal de Minas Gerais.
 
 ## Veja a apresentação:
-- [Slides](https://dominandolatex.netlify.app/)
+- [Slides](https://bit.ly/latex-cvbioinfo)
+- QR Code:
+  [![qrcode](img/bit.ly_latex-cvbioinfo.png)
 
 ## Licença de uso
 
