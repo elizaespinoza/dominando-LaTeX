@@ -13,11 +13,17 @@
     <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
     <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
     <script src="libs/tile-view/tile-view.js"></script>
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"fc641eacbc654ae59124805059d5a6c4","expires":1}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"beb686235ad5411fb8ba62705c4faa53","expires":1}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
     <script src="libs/editable/editable.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <script src="libs/fitvids/fitvids.min.js"></script>
     <link rel="stylesheet" href="css/default.css" type="text/css" />
     <link rel="stylesheet" href="css/mmp.css" type="text/css" />
     <link rel="stylesheet" href="css/mmp-fonts.css" type="text/css" />
@@ -66,6 +72,15 @@ class: middle
 @keyframes xe__progress-bar__wipe {
   0% { width: calc(var(--slide-previous) / var(--slide-total) * 100%); }
   100% { width: calc(var(--slide-current) / var(--slide-total) * 100%); }
+}</style><style>.shareagain-bar {
+--shareagain-foreground: rgb(255, 255, 255);
+--shareagain-background: rgba(0, 0, 0, 0.5);
+}</style><style>.shareagain-bar {
+--shareagain-foreground: rgb(255, 255, 255);
+--shareagain-background: rgba(0, 0, 0, 0.5);
+--shareagain-pinterest: none;
+--shareagain-pocket: none;
+--shareagain-reddit: none;
 }</style>
 
 
@@ -445,8 +460,14 @@ xaringan::inf_mr()
 
 ---
 class: middle
- 
-&lt;center&gt;&lt;img src="img/bit.ly_latex-cvbioinfo.png" width="670"&lt;/&gt;
+
+
+<div class="shareagain" style="min-width:300px;margin:1em auto;max-width:600px;">
+<iframe src="share-again.html" width="400" height="300" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<script>fitvids('.shareagain', {players: 'iframe'});</script>
+</div>
+
+&lt;center/&gt;&lt;h3&gt;[https://bit.ly/latex-cvbioinfo](https://bit.ly/latex-cvbioinfo) &lt;img src="img/bit.ly_latex-cvbioinfo.png" width="70"&lt;/&gt;&lt;/h3&gt;
 
 
     </textarea>

@@ -61,6 +61,15 @@ xaringanExtra::use_editable(expires = 1)
 #Search icon
 #xaringanExtra::use_search(show_icon = TRUE)
 
+#Fit slides to screen
+xaringanExtra::style_share_again(
+  share_buttons = c("all")
+)
+#share again the slides
+xaringanExtra::use_share_again()
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin", "facebook")
+)
 ```
 
 
@@ -450,7 +459,13 @@ xaringan::inf_mr()
 
 ---
 class: middle
- 
-<center><img src="img/bit.ly_latex-cvbioinfo.png" width="670"</>
+
+
+```{r embed-xaringan, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "share-again.html", ratio = "4:3",
+  max_width = 600)
+```
+
+<center/><h3>[https://bit.ly/latex-cvbioinfo](https://bit.ly/latex-cvbioinfo) <img src="img/bit.ly_latex-cvbioinfo.png" width="70"</></h3>
 
 
