@@ -164,7 +164,7 @@ class: middle
 
 .pull-right[
 
-<center><img src="https://cdn-icons.flaticon.com/png/512/2076/premium/2076970.png?token=exp=1657236586~hmac=554564943542eaaa0bf321e9fc7f8452"  width="150"</></center>
+<center><img src="img/industria.png" width="150"</></center>
 
 `r emo::ji("pushpin")` Relatórios
 
@@ -316,32 +316,32 @@ class: middle
 
 - **Pacotes essenciais**
 
-  - babel
+  - `babel`
   
-  - inputenc
+  - `inputenc`
   
-  - graphicx
+  - `graphicx`
   
-  - hyperref
+  - `hyperref`
   
-  - amsmath
+  - `amsmath`
   
-  - subcaption
+  - `subcaption`
 ]
 
 .pull-right[
 
 - **Comandos básicos**
 
-  - title, author, date
+  - `title`, `author`, `date`
   
-  - Sumário (tableofcontents)
+  - Sumário (`tableofcontents`)
   
-  - section, subsection, subsubsection
+  - `section`, `subsection`, `subsubsection`
   
-  - Estilo (bf, it)
+  - Estilo (`bf`, `it`)
   
-  - Links (url)
+  - Links (`url`)
   
   - Listas (itemize, enumerate)
   
