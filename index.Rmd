@@ -68,7 +68,7 @@ xaringanExtra::style_share_again(
 #share again the slides
 xaringanExtra::use_share_again()
 xaringanExtra::style_share_again(
-  share_buttons = c("twitter", "linkedin", "facebook")
+  share_buttons = c("all")
 )
 ```
 
