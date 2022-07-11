@@ -58,7 +58,8 @@ xaringanExtra::use_tile_view()
 #Editar na hora
 xaringanExtra::use_editable(expires = 1)
 
-xaringanExtra::use_search(show_icon = TRUE)
+#Search icon
+#xaringanExtra::use_search(show_icon = TRUE)
 
 ```
 
@@ -392,20 +393,23 @@ class: middle
 .pull-left[
 ## Sítios Q&A
 
-- [StackOverflow](https://stackoverflow.com/)
+|<h4>[StackOverflow](https://stackoverflow.com/)</h4>|<h4>[TeX - LaTeX Stack Exchange](https://www.latex-project.org/help/links/#question-and-answer-websites:~:text=TeX%20%2D%20LaTeX%20Stack%20Exchange)</h4>|<h4>[LaTeX Community](http://www.latex-community.org/)</h4>|
+|:-:|:-:|:-:|
+|<img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded" width="100">|<img src="https://cdn.sstatic.net/Sites/tex/Img/logo.svg?v=0ca861a7c12e" width="200">|<h5><img src="https://i.stack.imgur.com/Vv98z.png" width="130"></h5>|
 
-- [TeX - LaTeX Stack Exchange](https://www.latex-project.org/help/links/#question-and-answer-websites:~:text=TeX%20%2D%20LaTeX%20Stack%20Exchange)
-
-- [LaTeX Community](http://www.latex-community.org/)
-
-<br>
-## Tutoriais
-- [Um cursso interativo para iniciantes](https://www.learnlatex.org/pt/)
-
-- [Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
 ]
 
 .pull-right[
+
+
+## Tutoriais
+
+|<h4>[Learn LaTeX](https://www.learnlatex.org/pt/)</h4>|<h4>[Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)</h4>|
+|:-:|:-:|:-:|
+|<img src="https://opengraph.githubassets.com/76761bae41d4845846d8a9cbacf4ac480f8549eecdd6c4cada4af4c5d71a187b/learnlatex/learnlatex.github.io"/>|<h5><img src="https://i.ytimg.com/vi/4tkr2sLGY6M/maxresdefault.jpg"></h5>|
+]
+---
+class: middle
 
 ## Documentação
 - [Comprehensive TEX Archive Network (CTAN)](https://ctan.org/)
@@ -414,7 +418,7 @@ class: middle
 
 - [The LaTeX Project](https://www.latex-project.org/help/)
 
-]
+
 ---
 
 class: middle
@@ -422,8 +426,8 @@ class: middle
 # Muito obrigada!
 .pull-left[
 
-```{r, out.width="100%"}
-knitr::include_graphics("https://media.nature.com/lw800/magazine-assets/d41586-021-01485-y/d41586-021-01485-y_19217544.jpg")
+```{r, out.width="90%"}
+knitr::include_graphics("https://pbs.twimg.com/media/FMAytwnX0AYLBY_.png")
 ```
 ]
 
