@@ -462,8 +462,8 @@ class: middle
 
 
 ```{r embed-xaringan, echo=FALSE}
-xaringanExtra::embed_xaringan(url = "share-again.html", ratio = "16:9",
-  max_width = 600)
+xaringanExtra::embed_xaringan(url = "https://dominandolatex.netlify.app/", ratio = "16:9",
+  max_width = 610)
 ```
 
 <center/><h3>[https://bit.ly/latex-cvbioinfo](https://bit.ly/latex-cvbioinfo) <img src="img/bit.ly_latex-cvbioinfo.png" width="90"</></h3>
