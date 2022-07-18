@@ -405,11 +405,9 @@ class: middle
 |<h4>[StackOverflow](https://stackoverflow.com/)</h4>|<h4>[TeX - LaTeX Stack Exchange](https://www.latex-project.org/help/links/#question-and-answer-websites:~:text=TeX%20%2D%20LaTeX%20Stack%20Exchange)</h4>|<h4>[LaTeX Community](http://www.latex-community.org/)</h4>|
 |:-:|:-:|:-:|
 |<img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded" width="100">|<img src="https://cdn.sstatic.net/Sites/tex/Img/logo.svg?v=0ca861a7c12e" width="200">|<h5><img src="https://i.stack.imgur.com/Vv98z.png" width="130"></h5>|
-
 ]
 
 .pull-right[
-
 
 ## Tutoriais
 
@@ -420,13 +418,24 @@ class: middle
 ---
 class: middle
 
+# Onde procurar ajuda?
+
+.pull-left[
 ## Documentação
-- [Comprehensive TEX Archive Network (CTAN)](https://ctan.org/)
 
-- [TeXdoc Online](https://texdoc.org/)
+|<h4>[Comprehensive TEX Archive Network](https://ctan.org/)</h4>|<h4>[TeXdoc Online](https://texdoc.org/)</h4>|<h4>[The LaTeX Project](https://www.latex-project.org/help/)</h4>|
+|:-:|:-:|:-:|
+|<img src="https://www.ctan.org/assets/ctan-rot-ff5ef84c1b1224b861edaf720adbeacc.gif" width="100">|<img src="img/texdoc.PNG" width="350">|<h5><img src="https://www.pdfa.org/wp-content/uploads/2021/01/latex-wpv_x200.png" width="270"></h5>|
+]
 
-- [The LaTeX Project](https://www.latex-project.org/help/)
+.pull-right[
 
+## Podcasts & Videos
+
+|<h4>[Café com LaTeX](https://vidaestudantil.com/podcasts/cl/)</h4>|<h4>[Why LaTeX?](https://youtu.be/9eLjt5Lrocw)</h4>|
+|:-:|:-:|:-:|
+|<img src="https://vidaestudantil.com/wp-content/uploads/2021/11/CL_capa_podcast.png" width="180"/>|<h5><img src="https://i.ytimg.com/vi/9eLjt5Lrocw/maxresdefault.jpg" width="270"></h5>|
+]
 
 ---
 
