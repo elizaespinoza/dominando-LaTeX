@@ -377,9 +377,9 @@ class: middle
 
 class: middle
 
+.pull-left[
 # Qué vamos a ver?
 
-.pull-left[
 - Equações 
 
   - O que acha do [codecogs](https://www.codecogs.com/eqnedit.php)?
@@ -402,7 +402,7 @@ class: middle
 ```{r}
 library(tweetrmd)
 tweet_embed(tweet_url("DrHammersley", "1530629321320239106?s=20&t=jFtgWdOBM1reK-1OkEC9_g"),
-  maxwidth = 250,align = c("center"))
+  maxwidth = 300,align = c("center"))
 ```
 
 ]
