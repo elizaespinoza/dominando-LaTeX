@@ -16,7 +16,6 @@ Estes materiais são disponibilizados com a licença Creative Commons Atribuiç�
 
 Revise o [LICENCE.md](https://github.com/ElizaAlfaro/seminarios_01072022/blob/master/LICENCE.md) para ver os direitos e as limitações da licença.
 
-
 [![CC BY 4.0][cc-by-image]][cc-by]
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
