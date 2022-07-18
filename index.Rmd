@@ -434,7 +434,7 @@ class: middle
 
 |<h4>[Café com LaTeX](https://vidaestudantil.com/podcasts/cl/)</h4>|<h4>[Why LaTeX?](https://youtu.be/9eLjt5Lrocw)</h4>|
 |:-:|:-:|:-:|
-|<img src="https://vidaestudantil.com/wp-content/uploads/2021/11/CL_capa_podcast.png" width="180"/>|<h5><img src="https://i.ytimg.com/vi/9eLjt5Lrocw/maxresdefault.jpg" width="270"></h5>|
+|<h5><iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/391ErUxZ4qNnjDBJqR5N0E?utm_source=generator" width="400" height="165" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></h5>|<iframe width="100%" height="100"  src="https://www.youtube.com/embed/9eLjt5Lrocw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>|
 ]
 
 ---
