@@ -387,8 +387,8 @@ class: middle
 - Referências
 
   - [Scholar](https://scholar.google.com)
-  
   - [Crossref](https://computeel.org/computeel/blog/2019/01/17/Bibtex.html)
+  - [Mendeley & Zotero](https://twitter.com/DrHammersley/status/1530629321320239106?s=20&t=-7RO2-LIt1chP4dAeqDt4g)
   
 - Figuras
 
