@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5e55f16c-500d-4214-a934-78de9a43911f/deploy-status)](https://app.netlify.com/sites/dominandolatex/deploys) [![CC BY 4.0][cc-by-shield]][cc-by]
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5e55f16c-500d-4214-a934-78de9a43911f/deploy-status)](https://app.netlify.com/sites/dominandolatex/deploys) [![CC BY 4.0][cc-by-shield]][cc-by] <img src="https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg" weight="9%"/>
 
 # Dominando LaTeX
 
